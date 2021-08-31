@@ -65,35 +65,35 @@ void indicatorsOn() {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[0], HIGH);
-  } else if (distance < 80 && distance > 60) {
+  } else if (distance < 80 && distance >= 60) {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[1], HIGH);
-  } else if (distance < 60 && distance > 45) {
+  } else if (distance < 60 && distance >= 45) {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[2], HIGH);
-  } else if (distance < 40 && distance > 25) {
+  } else if (distance < 40 && distance >= 25) {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[3], HIGH);
-  } else if (distance < 25 && distance > 15) {
+  } else if (distance < 25 && distance >= 15) {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[4], HIGH);
-  } else if (distance < 15 && distance > 10) {
+  } else if (distance < 15 && distance >= 10) {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[5], HIGH);
-  } else if (distance < 10 && distance > 7) {
+  } else if (distance < 10 && distance >= 7) {
     ledoff();
     tone(buzzer,4000);
     digitalWrite(ledPins[6], HIGH);
-  } else if (distance < 7 && distance > 3) {
+  } else if (distance < 7 && distance >= 3) {
     ledoff();
     tone(buzzer,5000);
     digitalWrite(ledPins[7], HIGH);
-  } else if (distance < 3 && distance > 0) {
+  } else if (distance < 3 && distance >= 0) {
     ledoff();
     tone(buzzer,8000);
     digitalWrite(ledPins[8], HIGH);
