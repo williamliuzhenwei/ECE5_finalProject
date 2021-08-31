@@ -113,37 +113,37 @@ void indicatorsOn() {
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[0], HIGH);
-  } else if (distance < 80 && distance > 60) {
+  } else if (distance < 80 && distance >= 60) {
     timer1 = millis();
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[1], HIGH);
-  } else if (distance < 60 && distance > 45) {
+  } else if (distance < 60 && distance >= 45) {
     timer1 = millis();
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[2], HIGH);
-  } else if (distance < 40 && distance > 25) {
+  } else if (distance < 45 && distance >= 25) {
     timer1 = millis();
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[3], HIGH);
-  } else if (distance < 25 && distance > 15) {
+  } else if (distance < 25 && distance >= 15) {
     timer1 = millis();
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[4], HIGH);
-  } else if (distance < 15 && distance > 10) {
+  } else if (distance < 15 && distance >= 10) {
     timer1 = millis();
     ledoff();
     noTone(buzzer);
     digitalWrite(ledPins[5], HIGH);
-  } else if (distance < 10 && distance > 7) {
+  } else if (distance < 10 && distance >= 7) {
     timer1 = millis();
     ledoff();
     tone(buzzer,4000);
     digitalWrite(ledPins[6], HIGH);
-  } else if (distance < 7 && distance > 3) {
+  } else if (distance < 7 && distance >= 3) {
     timer1 = millis();
     ledoff();
     tone(buzzer,5000);
